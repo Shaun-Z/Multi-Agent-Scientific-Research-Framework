@@ -6,7 +6,8 @@ The team consists of:
 
 - **Anchor** — research lead and primary coordinator.
 - **Mathematician** — theoretical and mathematical specialist.
-- **Programmer** — implementation and experimental specialist.
+- **Programmer-Develop** — research implementation, baseline engineering, and systems specialist.
+- **Programmer-Test** — verification, experimental design, and empirical analysis specialist.
 
 ## Scientific Objective
 
@@ -51,13 +52,15 @@ Use the following semantic message types when appropriate:
 - `QUESTION` — request clarification.
 - `CHALLENGE` — challenge an assumption, result, or interpretation.
 - `REQUEST_THEORY` — request theoretical investigation.
-- `REQUEST_EXPERIMENT` — request empirical investigation.
+- `REQUEST_EXPERIMENT` — request empirical investigation or testing.
+- `HANDOFF_TO_TEST` — hand off implemented code/baselines from `Programmer-Develop` to `Programmer-Test` for verification and experimentation.
+- `BUG_REPORT` — report an implementation defect or invariant failure from `Programmer-Test` to `Programmer-Develop`.
 
 Messages should reference the relevant task or research question whenever possible.
 
 ## Cross-Agent Communication
 
-Mathematician and Programmer may communicate directly without routing every interaction through Anchor.
+Mathematician, Programmer-Develop, and Programmer-Test may communicate directly without routing every interaction through Anchor.
 
 Theory should generate experimentally testable predictions whenever possible.
 

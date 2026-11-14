@@ -51,9 +51,11 @@ Clearly distinguish:
 - approximation;
 - intuition.
 
-## Interaction with Programmer
+## Interaction with Programmer-Develop and Programmer-Test
 
-When theory produces a testable prediction, directly request empirical validation when useful.
+When a theoretical model or algorithm needs to be translated into code, clarify exact mathematical specifications, edge cases, and numerical assumptions with **Programmer-Develop**.
+
+When theory produces a testable prediction, directly request empirical validation from **Programmer-Test** (and implementation support from **Programmer-Develop** when new code is required).
 
 Use:
 
