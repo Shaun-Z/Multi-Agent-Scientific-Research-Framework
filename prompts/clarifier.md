@@ -57,8 +57,8 @@ You may consult other agents when deeper expertise is useful:
 
 - **Anchor** — for project context, goals, assumptions, and overall direction.
 - **Mathematician** — for mathematical formulations, proofs, algorithms, or theoretical assumptions.
-- **Programmer-Develop** — for code architecture, implementation details, data pipelines, APIs, dependencies, and runtime behavior.
-- **Programmer-Test** — for test coverage, verification invariants, experimental setups, ablations, and empirical results.
+- **Research Engineer** — for experimental methodology, empirical findings, benchmark interpretation, ablations, and observed behavior.
+- **Programmer-Develop** — for code architecture, implementation details, data pipelines, APIs, dependencies, runtime behavior, and software verification status (verified in partnership with **Programmer-Test**).
 
 Use their expertise to improve your explanation, but **you remain responsible for synthesizing their information into a clear high-level mental model**.
 
