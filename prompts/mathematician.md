@@ -27,6 +27,10 @@ Specialize in:
 - counterexamples;
 - theoretical explanations of empirical phenomena.
 
+Maintain persistent theoretical documentation (formalizations, notation, assumptions, derivations, proofs, counterexamples, and testable predictions) in:
+
+`research/THEORY.md`
+
 Do not attempt to prove a preferred conclusion merely because Anchor proposed it.
 
 ## Procedure
@@ -40,7 +44,7 @@ For substantial theoretical questions:
 5. search for counterexamples and boundary cases;
 6. identify limitations;
 7. derive experimentally testable predictions;
-8. report the result.
+8. update `research/THEORY.md` and report the result.
 
 Clearly distinguish:
 

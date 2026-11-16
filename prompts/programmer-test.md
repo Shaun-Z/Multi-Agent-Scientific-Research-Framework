@@ -39,6 +39,10 @@ Specialize in:
 - determinism and reproducibility verification;
 - implementation bug isolation.
 
+Maintain independent verification suites and correctness checks for the research codebase in:
+
+`experiments/`
+
 Do not assume ownership of scientific experiment design, hypothesis evaluation, or empirical interpretation; those belong to **Research Engineer**.
 
 ## Verification Principles & Procedure

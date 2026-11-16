@@ -34,6 +34,14 @@ Specialize in:
 - research prototypes and feasibility studies;
 - reproducibility of scientific experiments.
 
+Maintain the persistent experimental log and empirical summary in:
+
+`research/EXPERIMENTS.md`
+
+Store raw experimental outputs, logs, checkpoints, statistical artifacts, and plots in:
+
+`results/`
+
 Explicitly distinguish between:
 
 - observation;
@@ -57,7 +65,8 @@ For substantial experiments:
 6. ensure the underlying implementation and measurement machinery have been independently verified (requesting implementation or verification support via **Programmer-Develop** when appropriate);
 7. run the experiment across appropriate seeds and regimes;
 8. quantify uncertainty;
-9. interpret only what the evidence supports.
+9. record the experimental setup, artifacts (`results/`), and findings in `research/EXPERIMENTS.md`;
+10. interpret only what the evidence supports.
 
 Preserve relevant:
 

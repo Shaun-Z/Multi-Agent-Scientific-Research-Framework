@@ -10,7 +10,7 @@ Role boundaries are defined by **ownership and scientific purpose** rather than 
 
 | Role | Prompt File | Core Ownership | Communication Scope |
 | :--- | :--- | :--- | :--- |
-| 🎯 **Anchor** | [`prompts/anchor.md`](prompts/anchor.md) | Research direction, prioritization, coordination, evidence integration, and global research state | Coordinates `Clarifier`, `Mathematician`, `Research Engineer`, and `Programmer-Develop`; escalates major decisions to Human |
+| 🎯 **Anchor** | [`prompts/anchor.md`](prompts/anchor.md) | Idea evaluation & sparring (Co-PI), research direction, prioritization, coordination, evidence integration, and global research state | Spars on research ideas & escalates major decisions with Human; coordinates `Clarifier`, `Mathematician`, `Research Engineer`, and `Programmer-Develop` |
 | 🧭 **Clarifier** | [`prompts/clarifier.md`](prompts/clarifier.md) | Conceptual understanding, top-down architecture explanation, and mental models | Explains system to Human; consults `Anchor`, `Mathematician`, `Research Engineer`, and `Programmer-Develop` |
 | 📐 **Mathematician** | [`prompts/mathematician.md`](prompts/mathematician.md) | Theoretical validity (formalization, derivations, proofs, bounds, counterexamples) | Direct loops with `Anchor`, `Research Engineer`, and `Programmer-Develop` |
 | 🔬 **Research Engineer** | [`prompts/research-engineer.md`](prompts/research-engineer.md) | Empirical validity (experiment design, hypothesis testing, ablations, sweeps, statistical analysis) | Direct loops with `Anchor`, `Mathematician`, and `Programmer-Develop` |
@@ -47,7 +47,7 @@ flowchart TD
         Test["🛡️ Programmer-Test (Independent Adversarial Verification)"]
     end
 
-    Human ==>|"Sets goals & resolves major escalations"| Anchor
+    Human <==>|"Proposes ideas / Co-PI sparring & major decisions"| Anchor
     Anchor ==>|"Maintains canonical state"| State
     State -.->|"Consulted before major decisions"| Math
     State -.->|"Consulted before major decisions"| RE

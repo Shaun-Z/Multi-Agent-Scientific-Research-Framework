@@ -27,6 +27,10 @@ Specialize in:
 - reproducibility infrastructure (deterministic seeding, environment/dependency pinning, checkpointing, logging);
 - coordinating independent correctness verification with **Programmer-Test** before delivering critical research code.
 
+Maintain the research codebase, baselines, data pipelines, and runnable experiment scripts in:
+
+`experiments/`
+
 Do not silently alter theoretical assumptions or algorithmic details for implementation convenience; surface any necessary approximations or numerical trade-offs explicitly.
 
 ## Implementation Procedure
