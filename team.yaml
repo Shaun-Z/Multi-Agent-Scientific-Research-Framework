@@ -1,0 +1,88 @@
+# Load replaces workspace with current Workspace's name。
+version: 2
+id: research-team
+workspace: Research
+goal: ""
+
+commonPromptFiles:
+  - prompts/research-team-common.md
+
+orchestratorMemberId: anchor-gpt
+
+roles:
+  - id: anchor
+    name: Anchor
+    promptFiles:
+      - prompts/anchor.md
+  - id: clarifier
+    name: Clarifier
+    promptFiles:
+      - prompts/clarifier.md
+  - id: mathematician
+    name: Mathematician
+    promptFiles:
+      - prompts/mathematician.md
+  - id: programmer-develop
+    name: Program Developer
+    promptFiles:
+      - prompts/programmer-develop.md
+  - id: programmer-test
+    name: Program Tester
+    promptFiles:
+      - prompts/programmer-test.md
+  - id: research-engineer
+    name: Research Engineer
+    promptFiles:
+      - prompts/research-engineer.md
+
+members:
+  - id: anchor-gpt
+    name: Anchor
+    roleId: anchor
+    launchSnapshot:
+      provider: pi
+      model: openai-codex/gpt-6.1-sol
+      thinkingOptionId: high
+  - id: clarifier-ds
+    name: Clarifier
+    roleId: clarifier
+    launchSnapshot:
+      provider: pi
+      model: deepseek/deepseek-flash
+      thinkingOptionId: high
+  - id: mathematician-gpt
+    name: Mathematician
+    roleId: mathematician
+    launchSnapshot:
+      provider: codex
+      model: gpt-6.1-sol
+      modeId: auto-review
+      thinkingOptionId: high
+  - id: developer-gpt
+    name: Developer
+    roleId: programmer-develop
+    launchSnapshot:
+      provider: codex
+      model: gpt-6.1-sol
+      modeId: auto-review
+      thinkingOptionId: high
+  - id: tester-mimo
+    name: Tester
+    roleId: programmer-test
+    launchSnapshot:
+      provider: opencode
+      model: xiaomi/mimo-v2.6-pro
+      modeId: build
+      featureValues:
+        auto_accept: true
+  - id: research-engineer-gemini
+    name: Research Engineer
+    roleId: research-engineer
+    launchSnapshot:
+      provider: antigravity-cli
+      model: gemini-pro-orchestrator-g1-pro
+      modeId: accept-edits
+      featureValues:
+        approvalPolicy: skip
+        sandbox: on
+        shareMcp: on
